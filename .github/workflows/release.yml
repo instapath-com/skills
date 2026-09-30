@@ -1,0 +1,50 @@
+name: Release
+
+# Attaches the OpenAI plugin archive to a GitHub Release for each version tag.
+# OpenAI's plugin directory accepts only uploads, so this is the file to upload
+# at https://platform.openai.com/plugins after a new version. The tags come from
+# the publish workflow in instapath-com/instapath, which leaves this folder alone.
+
+on:
+  push:
+    tags: ["v*"]
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: Existing version tag, for example v1.10.0
+        required: true
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    env:
+      TAG: ${{ inputs.tag || github.ref_name }}
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ inputs.tag || github.ref }}
+
+      - name: Build the OpenAI archive
+        run: |
+          version="${TAG#v}"
+          mkdir -p build/openai
+          cp -R .claude-plugin skills README.md LICENSE build/openai/
+          # Claude-only files, which OpenAI's portal does not take.
+          rm -f build/openai/.claude-plugin/marketplace.json build/openai/.claude-plugin/icon.svg
+          (cd build/openai && zip -q -r -X "../instapath-openai-${version}.zip" .)
+          echo "ARCHIVE=build/instapath-openai-${version}.zip" >> "${GITHUB_ENV}"
+          unzip -l "build/instapath-openai-${version}.zip"
+
+      - name: Publish the release
+        run: |
+          if gh release view "${TAG}" > /dev/null 2>&1; then
+            gh release upload "${TAG}" "${ARCHIVE}" --clobber
+          else
+            gh release create "${TAG}" "${ARCHIVE}" --verify-tag \
+              --title "Instapath skill ${TAG#v}" \
+              --notes "Upload \`$(basename "${ARCHIVE}")\` to OpenAI's plugin directory at https://platform.openai.com/plugins (Skills only). It is the only Instapath listing that takes a manual upload."
+          fi
