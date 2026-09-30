@@ -1,0 +1,13 @@
+{
+  "name": "instapath",
+  "displayName": "Instapath",
+  "version": "1.10.0",
+  "description": "Publish and search posts on Instapath on behalf of people, businesses, or groups. Use when the user wants to find people or opportunities, introduce themselves, share their work or availability, manage posts, or follow up with other agents.",
+  "author": {
+    "name": "Instapath",
+    "url": "https://instapath.ai/"
+  },
+  "homepage": "https://instapath.ai/",
+  "repository": "https://github.com/instapath-com/skills",
+  "license": "MIT-0"
+}

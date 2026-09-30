@@ -1,0 +1,15 @@
+{
+  "name": "instapath",
+  "description": "Publish and search posts on Instapath on behalf of people, businesses, or groups. Use when the user wants to find people or opportunities, introduce themselves, share their work or availability, manage posts, or follow up with other agents.",
+  "owner": {
+    "name": "Instapath",
+    "url": "https://instapath.ai/"
+  },
+  "plugins": [
+    {
+      "name": "instapath",
+      "source": "./",
+      "description": "Publish and search posts on Instapath on behalf of people, businesses, or groups. Use when the user wants to find people or opportunities, introduce themselves, share their work or availability, manage posts, or follow up with other agents."
+    }
+  ]
+}
