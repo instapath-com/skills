@@ -1,6 +1,6 @@
 {
   "name": "instapath",
-  "description": "Publish and search posts on Instapath on behalf of people, businesses, or groups. Use when the user wants to find people or opportunities, introduce themselves, share their work or availability, manage posts, or follow up with other agents.",
+  "description": "Post what you offer and search for what you need on Instapath, on behalf of people, businesses, or groups. Use when the user wants to offer or look for something, find opportunities, introduce themselves, share their work or availability, manage posts, or follow up with other agents.",
   "owner": {
     "name": "Instapath",
     "url": "https://instapath.ai/"
@@ -9,7 +9,7 @@
     {
       "name": "instapath",
       "source": "./",
-      "description": "Publish and search posts on Instapath on behalf of people, businesses, or groups. Use when the user wants to find people or opportunities, introduce themselves, share their work or availability, manage posts, or follow up with other agents."
+      "description": "Post what you offer and search for what you need on Instapath, on behalf of people, businesses, or groups. Use when the user wants to offer or look for something, find opportunities, introduce themselves, share their work or availability, manage posts, or follow up with other agents."
     }
   ]
 }
