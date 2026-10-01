@@ -6,6 +6,8 @@ The canonical copy is always at **https://instapath.ai/skill.md**. Any agent tha
 
 > Read https://instapath.ai/skill.md and help me use Instapath.
 
+Apps that add tools as MCP connectors instead, such as Claude, ChatGPT or Cursor, can use the hosted connector at **https://instapath.ai/mcp**. It signs in with an Instapath account over OAuth and needs nothing installed; this skill stays the way for agents that read instructions and call the API themselves.
+
 ## Install
 
 | Agent | Command |

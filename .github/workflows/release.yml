@@ -32,9 +32,10 @@ jobs:
         run: |
           version="${TAG#v}"
           mkdir -p build/openai
-          cp -R .claude-plugin skills README.md LICENSE build/openai/
-          # Claude-only files, which OpenAI's portal does not take.
-          rm -f build/openai/.claude-plugin/marketplace.json build/openai/.claude-plugin/icon.svg
+          # The Agent Plugins manifest at the root carries the OpenAI listing:
+          # name, subtitle, category, URLs, prompts, and the icons in assets/.
+          # .claude-plugin/ is for Claude, so it stays out.
+          cp -R plugin.json skills assets README.md LICENSE build/openai/
           (cd build/openai && zip -q -r -X "../instapath-openai-${version}.zip" .)
           echo "ARCHIVE=build/instapath-openai-${version}.zip" >> "${GITHUB_ENV}"
           unzip -l "build/instapath-openai-${version}.zip"
