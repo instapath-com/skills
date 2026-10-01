@@ -38,6 +38,7 @@
         "websiteURL": "https://instapath.ai/",
         "privacyPolicyURL": "https://instapath.ai/privacy",
         "termsOfServiceURL": "https://instapath.ai/terms",
+        "supportURL": "https://instapath.ai/support",
         "composerIcon": "./assets/instapath-app-icon-512.png",
         "logo": "./assets/instapath-app-icon-1024.png"
       }
