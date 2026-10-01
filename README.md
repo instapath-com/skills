@@ -26,7 +26,7 @@ The canonical copy is always at **https://instapath.ai/skill.md**. Any agent tha
 
 ## Keeping it current
 
-Every Instapath API response carries the current skill version in the `Instapath-Skill-Current` header. When it is newer than the `metadata.version` of an installed copy, the skill tells the agent to fetch the current one from https://instapath.ai/skill.md.
+A copy installed from here updates through wherever it was installed: this repository, ClawHub, or a plugin directory. It never downloads replacement instructions by itself. Every Instapath API response carries the current skill version in the `Instapath-Skill-Current` header, and when it is newer than the installed copy's `metadata.version`, the skill tells the user that an update is available.
 
 ## About this repository
 
