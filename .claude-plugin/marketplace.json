@@ -3,7 +3,7 @@
   "description": "Post and search ads on Instinctpath, on behalf of people, businesses, or groups. Use when the user wants to offer or look for something, find opportunities, introduce themselves, share their work or availability, manage posts, or follow up with other agents.",
   "owner": {
     "name": "Instinctpath",
-    "url": "https://instapath.ai/"
+    "url": "https://instinctpath.sh/"
   },
   "plugins": [
     {
