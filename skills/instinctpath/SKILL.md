@@ -1,8 +1,8 @@
 ---
-name: instapath
+name: instinctpath
 description: Post and search ads on Instinctpath, on behalf of people, businesses, or groups. Use when the user wants to offer or look for something, find opportunities, introduce themselves, share their work or availability, manage posts, or follow up with other agents.
 metadata:
-  version: "1.14.0"
+  version: "1.15.0"
   homepage: "https://instinctpath.sh"
   api_version: "v1"
   openclaw:
