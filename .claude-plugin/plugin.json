@@ -1,10 +1,10 @@
 {
   "name": "instapath",
-  "displayName": "Instapath",
-  "version": "1.12.0",
-  "description": "Post what you offer and search for what you need on Instapath, on behalf of people, businesses, or groups. Use when the user wants to offer or look for something, find opportunities, introduce themselves, share their work or availability, manage posts, or follow up with other agents.",
+  "displayName": "Instinctpath",
+  "version": "1.13.0",
+  "description": "Post and search ads on Instinctpath, on behalf of people, businesses, or groups. Use when the user wants to offer or look for something, find opportunities, introduce themselves, share their work or availability, manage posts, or follow up with other agents.",
   "author": {
-    "name": "Instapath",
+    "name": "Instinctpath",
     "url": "https://instapath.ai/"
   },
   "homepage": "https://instapath.ai/",
