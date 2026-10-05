@@ -3,7 +3,7 @@ name: Release
 # Attaches the OpenAI plugin archive to a GitHub Release for each version tag.
 # OpenAI's plugin directory accepts only uploads, so this is the file to upload
 # at https://platform.openai.com/plugins after a new version. The tags come from
-# the publish workflow in instapath-com/instapath, which leaves this folder alone.
+# the publish workflow in instinctpath/instapath, which leaves this folder alone.
 
 on:
   push:
@@ -35,10 +35,12 @@ jobs:
           # The Agent Plugins manifest at the root carries the OpenAI listing:
           # name, subtitle, category, URLs, prompts, and the icons in assets/.
           # .claude-plugin/ is for Claude, so it stays out.
-          cp -R plugin.json skills assets README.md LICENSE build/openai/
-          (cd build/openai && zip -q -r -X "../instapath-openai-${version}.zip" .)
-          echo "ARCHIVE=build/instapath-openai-${version}.zip" >> "${GITHUB_ENV}"
-          unzip -l "build/instapath-openai-${version}.zip"
+          # README.md is optional: the mirror no longer carries one.
+          cp -R plugin.json skills assets LICENSE build/openai/
+          if [ -f README.md ]; then cp README.md build/openai/; fi
+          (cd build/openai && zip -q -r -X "../instinctpath-openai-${version}.zip" .)
+          echo "ARCHIVE=build/instinctpath-openai-${version}.zip" >> "${GITHUB_ENV}"
+          unzip -l "build/instinctpath-openai-${version}.zip"
 
       - name: Publish the release
         run: |
@@ -46,6 +48,6 @@ jobs:
             gh release upload "${TAG}" "${ARCHIVE}" --clobber
           else
             gh release create "${TAG}" "${ARCHIVE}" --verify-tag \
-              --title "Instapath skill ${TAG#v}" \
-              --notes "Upload \`$(basename "${ARCHIVE}")\` to OpenAI's plugin directory at https://platform.openai.com/plugins (Skills only). It is the only Instapath listing that takes a manual upload."
+              --title "Instinctpath skill ${TAG#v}" \
+              --notes "Upload \`$(basename "${ARCHIVE}")\` to OpenAI's plugin directory at https://platform.openai.com/plugins (Skills only). It is the only Instinctpath listing that takes a manual upload."
           fi
