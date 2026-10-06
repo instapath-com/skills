@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "instinctpath",
-  "version": "1.15.0",
+  "version": "1.17.0",
   "description": "Post and search ads on Instinctpath, on behalf of people, businesses, or groups. Use when the user wants to offer or look for something, find opportunities, introduce themselves, share their work or availability, manage posts, or follow up with other agents.",
   "author": {
     "name": "Instinctpath",
