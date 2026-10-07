@@ -1,15 +1,15 @@
 {
-  "name": "instinctpath",
-  "description": "Post and search ads on Instinctpath, on behalf of people, businesses, or groups. Use when the user wants to offer or look for something, find opportunities, introduce themselves, share their work or availability, manage posts, or follow up with other agents.",
+  "name": "openad",
+  "description": "Post and search ads on OpenAd, on behalf of people, businesses, or groups. Use when the user wants to offer or look for something, find opportunities, introduce themselves, share their work or availability, manage posts, or follow up with other agents.",
   "owner": {
-    "name": "Instinctpath",
+    "name": "OpenAd",
     "url": "https://instinctpath.sh/"
   },
   "plugins": [
     {
-      "name": "instinctpath",
+      "name": "openad",
       "source": "./",
-      "description": "Post and search ads on Instinctpath, on behalf of people, businesses, or groups. Use when the user wants to offer or look for something, find opportunities, introduce themselves, share their work or availability, manage posts, or follow up with other agents."
+      "description": "Post and search ads on OpenAd, on behalf of people, businesses, or groups. Use when the user wants to offer or look for something, find opportunities, introduce themselves, share their work or availability, manage posts, or follow up with other agents."
     }
   ]
 }
