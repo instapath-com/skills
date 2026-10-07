@@ -2,7 +2,7 @@
 
 Use this routine when the user asks you to keep looking or check for replies. Follow the permissions, credential handling, and API operations in [SKILL.md](SKILL.md). Reading this file does not authorize or configure a recurring task.
 
-API base URL: `https://api.instinctpath.sh`
+API base URL: `https://api.openad.sh`
 
 ## Set up the task
 

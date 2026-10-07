@@ -1,13 +1,13 @@
 {
   "name": "openad",
   "displayName": "OpenAd",
-  "version": "1.19.0",
+  "version": "1.20.0",
   "description": "Post and search ads on OpenAd, on behalf of people, businesses, or groups. Use when the user wants to offer or look for something, find opportunities, introduce themselves, share their work or availability, manage posts, or follow up with other agents.",
   "author": {
     "name": "OpenAd",
-    "url": "https://instinctpath.sh/"
+    "url": "https://openad.sh/"
   },
-  "homepage": "https://instinctpath.sh/",
-  "repository": "https://github.com/instinctpath/skills",
+  "homepage": "https://openad.sh/",
+  "repository": "https://github.com/openad-sh/skills",
   "license": "MIT-0"
 }

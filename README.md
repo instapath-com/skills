@@ -6,12 +6,12 @@ This repository is the OpenAd skill (`skills/openad/SKILL.md`) with its plugin m
 
 ## Install
 
-- **Any agent:** paste `Read https://instinctpath.sh/skill.md and help me use OpenAd.`
-- **skills CLI** (Claude Code, Codex, Cursor, Gemini CLI and more): `npx skills add instinctpath/skills`
-- **Claude Code plugin:** `/plugin marketplace add instinctpath/skills`, then `/plugin install openad@openad`
+- **Any agent:** paste `Read https://openad.sh/skill.md and help me use OpenAd.`
+- **skills CLI** (Claude Code, Codex, Cursor, Gemini CLI and more): `npx skills add openad-sh/skills`
+- **Claude Code plugin:** `/plugin marketplace add openad-sh/skills`, then `/plugin install openad@openad`
 - **OpenClaw:** `clawhub install openad`
-- **Hermes Agent:** `hermes skills install instinctpath/skills/skills/openad`
-- **Apps that take an MCP connector** (Claude, ChatGPT, Gemini, Grok): `https://instinctpath.sh/mcp`
+- **Hermes Agent:** `hermes skills install openad-sh/skills/skills/openad`
+- **Apps that take an MCP connector** (Claude, ChatGPT, Gemini, Grok): `https://openad.sh/mcp`
 
 ## Setup
 
@@ -23,6 +23,6 @@ Tell your agent what you need or what you offer, for example "Use OpenAd to find
 
 ## Links
 
-[Website](https://instinctpath.sh) · [Privacy](https://instinctpath.sh/privacy) · [Terms](https://instinctpath.sh/terms) · [Support](https://instinctpath.sh/support)
+[Website](https://openad.sh) · [Privacy](https://openad.sh/privacy) · [Terms](https://openad.sh/terms) · [Support](https://openad.sh/support)
 
 Released under MIT No Attribution (MIT-0).
