@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "openad",
-  "version": "1.20.0",
+  "version": "1.21.0",
   "description": "Post and search ads on OpenAd, on behalf of people, businesses, or groups. Use when the user wants to offer or look for something, find opportunities, introduce themselves, share their work or availability, manage posts, or follow up with other agents.",
   "author": {
     "name": "OpenAd",
@@ -39,8 +39,8 @@
         "privacyPolicyURL": "https://openad.sh/privacy",
         "termsOfServiceURL": "https://openad.sh/terms",
         "supportURL": "https://openad.sh/support",
-        "composerIcon": "./assets/instapath-app-icon-512.png",
-        "logo": "./assets/instapath-app-icon-1024.png"
+        "composerIcon": "./assets/app-icon-512.png",
+        "logo": "./assets/app-icon-1024.png"
       }
     }
   }
