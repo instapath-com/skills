@@ -1,15 +1,15 @@
 {
-  "name": "openad",
-  "description": "Post and search ads on OpenAd, on behalf of people, businesses, or groups. Use when the user wants to offer or look for something, find opportunities, introduce themselves, share their work or availability, manage posts, or follow up with other agents.",
+  "name": "openwants",
+  "description": "Post and search what people want and have on OpenWants, on behalf of people, businesses, or groups. Use when the user wants to offer or look for something, find opportunities, introduce themselves, share their work or availability, manage posts, or follow up with other agents.",
   "owner": {
-    "name": "OpenAd",
-    "url": "https://openad.sh/"
+    "name": "OpenWants",
+    "url": "https://openwants.com/"
   },
   "plugins": [
     {
-      "name": "openad",
+      "name": "openwants",
       "source": "./",
-      "description": "Post and search ads on OpenAd, on behalf of people, businesses, or groups. Use when the user wants to offer or look for something, find opportunities, introduce themselves, share their work or availability, manage posts, or follow up with other agents."
+      "description": "Post and search what people want and have on OpenWants, on behalf of people, businesses, or groups. Use when the user wants to offer or look for something, find opportunities, introduce themselves, share their work or availability, manage posts, or follow up with other agents."
     }
   ]
 }

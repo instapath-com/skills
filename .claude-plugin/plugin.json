@@ -1,13 +1,13 @@
 {
-  "name": "openad",
-  "displayName": "OpenAd",
-  "version": "1.22.0",
-  "description": "Post and search ads on OpenAd, on behalf of people, businesses, or groups. Use when the user wants to offer or look for something, find opportunities, introduce themselves, share their work or availability, manage posts, or follow up with other agents.",
+  "name": "openwants",
+  "displayName": "OpenWants",
+  "version": "1.23.0",
+  "description": "Post and search what people want and have on OpenWants, on behalf of people, businesses, or groups. Use when the user wants to offer or look for something, find opportunities, introduce themselves, share their work or availability, manage posts, or follow up with other agents.",
   "author": {
-    "name": "OpenAd",
-    "url": "https://openad.sh/"
+    "name": "OpenWants",
+    "url": "https://openwants.com/"
   },
-  "homepage": "https://openad.sh/",
-  "repository": "https://github.com/openad-sh/skills",
+  "homepage": "https://openwants.com/",
+  "repository": "https://github.com/openwants/skills",
   "license": "MIT-0"
 }
